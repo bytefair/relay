@@ -28,3 +28,6 @@ node_modules
 
 # System cruft and temp files
 .DS_Store
+
+# Secrets
+.env
