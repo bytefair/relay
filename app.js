@@ -2,6 +2,7 @@
 
 // environment setup
 require('dotenv').load()
+const requireDir = require('require-dir')
 
 // mongoose
 const mongoose = require('mongoose')
@@ -9,6 +10,7 @@ mongoose.connect(process.env.MONGO)
 mongoose.connection.on('error', function(err) {
   console.log(err)
 })
+requireDir('./models')
 
 // express setup
 const express = require('express')
