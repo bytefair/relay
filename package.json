@@ -8,14 +8,15 @@
     "cms"
   ],
   "engines": {
-    "iojs": "2.0.0"
+    "iojs": "2.0.1"
   },
   "dependencies": {
-    "body-parser": "^1.12.3",
-    "compression": "^1.4.3",
+    "compression": "latest",
     "dotenv": "latest",
     "express": "~4.12",
+    "helmet": "~0.9",
     "mongoose": "~4.0",
+    "require-dir": "^0.3.0",
     "serve-static": "~1.9"
   },
   "devDependencies": {
